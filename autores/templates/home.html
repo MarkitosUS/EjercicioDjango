@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% load static %}
+<header class="row text-light">
+    
+    <div class="col-md-15 text-center"><h1>ESTO ES UN TRABAJO PARA BOOTCAMP.</h1></div>
+
+    <div class="col-md-15 text-center"> ESTE TRABAJO ES DE ACTORES Y SUS PELICULAS </div>
+
+</header>
+
+
+
+
+<div class="row my-4 text-center text-light">
+
+    {% for project in projects %}
+
+
+        <div class="col-md-4 p-4 ">
+
+            <div class="card bg-black card-project">
+                <img src="{{project.image.url}}" alt="" class="card-img-top md-4 p-4 tam-img" >
+                <div class="card-body">
+
+                <h2>{{project.title}}</h2>
+                <p>{{project.description}}</p>
+                <a href="{{project.url}}" class="btn btn-primary btn-lg rounded-0 my-3">Pelicula</a>
+                    
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+   
+
+
+    {% endfor %}{% endblock %}
+</div>

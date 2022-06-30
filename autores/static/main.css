@@ -1,0 +1,22 @@
+body{
+
+    background: #000;
+
+}
+
+.bg-black{
+
+    background:#000;
+
+}
+
+.card-project:hover{
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.tam-img{
+
+    width: 274px;
+    height: 313px;
+}
